@@ -1,9 +1,14 @@
 const messages = [
-    "Take your time.",
-    "I’ll wait.",
-    "Your comfort matters.",
-    "Think about it calmly.",
-    "Whatever your answer, I respect it."
+    "Afsana, are you sure? 🥺",
+    "Really sure, jaan? 💔",
+    "Think again please ❤️",
+    "You are my whole world 😢",
+    "Don't break my heart 😭",
+    "I will be very very sad...",
+    "Okay fine... I’ll cry 😔",
+    "Last chance Afsana 😩",
+    "Please say yes ❤️",
+    "You know you love me 😘"
 ];
 
 let messageIndex = 0;
@@ -16,7 +21,7 @@ function handleNoClick() {
     messageIndex = (messageIndex + 1) % messages.length;
 
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-    yesButton.style.fontSize = `${currentSize * 1.1}px`;
+    yesButton.style.fontSize = `${currentSize * 1.4}px`;
 }
 
 function handleYesClick() {
