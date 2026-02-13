@@ -1,14 +1,14 @@
 const messages = [
-    "Are you sure?",
-    "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "Afsana, are you sure? 🥺",
+    "Really sure, jaan? 💔",
+    "Think again please ❤️",
+    "You are my whole world 😢",
+    "Don't break my heart 😭",
+    "I will be very very sad...",
+    "Okay fine... I’ll cry 😔",
+    "Last chance Afsana 😩",
+    "Please say yes ❤️",
+    "You know you love me 😘"
 ];
 
 let messageIndex = 0;
@@ -16,10 +16,12 @@ let messageIndex = 0;
 function handleNoClick() {
     const noButton = document.querySelector('.no-button');
     const yesButton = document.querySelector('.yes-button');
+
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
+
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-    yesButton.style.fontSize = `${currentSize * 1.5}px`;
+    yesButton.style.fontSize = `${currentSize * 1.4}px`;
 }
 
 function handleYesClick() {
