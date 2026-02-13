@@ -1,9 +1,35 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
 .hearts {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    pointer-events: none;
 }
 
 .heart {
@@ -15,12 +41,6 @@
 }
 
 @keyframes floatUp {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100vh);
-        opacity: 0;
-    }
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
 }
